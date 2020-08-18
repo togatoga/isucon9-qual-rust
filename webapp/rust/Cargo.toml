@@ -1,0 +1,20 @@
+[package]
+name = "isucari"
+version = "0.1.0"
+authors = ["Hitoshi Togasaki"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "3.0.0-beta.3"
+actix-files = "0.3.0-beta.1"
+actix-http = "1.0.1"
+actix-session = "0.4.0-alpha.1"
+anyhow = "1.0"
+sqlx = {version = "0.4.0-beta.1", features = ["mysql", "time", "chrono"] }
+serde_json = "1.0"
+serde = "1.0.115"
+chrono = { version = "0.4", features = ["serde", "rustc-serialize"] }
+async-recursion = "0.2"
+url = "2.1.1"
